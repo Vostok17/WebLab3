@@ -20,11 +20,11 @@ body {
 header, footer {
     align-items: center;
     background-color: var(--bg-color-blue);
+    border: 1px solid var(--border-color);
     display: flex;
     min-height: 10vh;
     padding: 0 30px;
     width: 100%;
-    border: 1px solid var(--border-color);
 }
 header {
     justify-content: flex-start;
@@ -105,11 +105,11 @@ aside{
 .list{
     align-items: center;
     background-color: var(--bg-color-green);
+    border: 1px solid var(--border-color);
     display: flex;
     flex:1;
     justify-content: flex-start;
     width: 100%;
-    border: 1px solid var(--border-color);
 }
 .list > ol{
     padding-bottom: 10px;
@@ -128,17 +128,17 @@ aside{
 }
 
 .text-1, .text-2, .picture{
+    border: 1px solid var(--border-color);
     padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
-    border: 1px solid var(--border-color);
 }
 
 .text-2 {
+    height: auto;
     padding-bottom: 0;
     padding-top: 0;
-    height: auto;
 }
 
 .text-1 {
@@ -146,9 +146,9 @@ aside{
 }
 
 nav {
+    border: 1px solid var(--border-color);
     padding-left: 10px;
     padding-right: 10px;
-    border: 1px solid var(--border-color);
 }
 
 .color {
