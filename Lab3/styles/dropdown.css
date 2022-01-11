@@ -1,0 +1,62 @@
+*{
+    --menu-bg: rgb(219, 151, 23);
+    --menu-li-hover: rgb(61, 16, 16);
+    --menu-li-text: rgb(190, 126, 126);
+    --submenu-li-bg: rgb(170, 105, 30);
+    --submenu-li-text: rgb(255, 255, 255);
+    --submenu-li-hover-bg: rgb(240, 255, 255);
+    --submenu-li-hover-text: rgb(71, 1, 1);
+
+    --main-black-color: rgb(0, 0, 0);
+    --main-white-color: rgb(255, 255, 255);
+    --border-color: var(--main-black-color);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: block;
+    list-style: none; 
+}
+
+.menu > li {
+    float: left;
+    font-size: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.menu > li {
+    background-color: var(--menu-color-orange);
+    color: var(--main-black-color);
+    display: block;
+    font-family: "Indie Flower", cursive;
+    text-decoration: none;
+}
+.menu > li:hover {
+    background-color: var(--menu-li-hover);
+    color: var(--menu-li-text);
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+.submenu > li {
+    background-color: var(--submenu-li-bg);
+    color: var(--submenu-li-text);
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+
+}
+.submenu > li:hover {
+    background-color: var(--submenu-li-hover-bg);
+    color: var(--submenu-li-hover-text);
+}
+
+.menu > li:hover > .submenu {
+    display: block;
+}
