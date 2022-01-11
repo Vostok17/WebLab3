@@ -3,7 +3,6 @@
     "version": "1.0.0",
     "description": "here will be labs for web",
     "main": "index.js",
-    "type": "module",
     "scripts": {
         "lint": "eslint . --no-error-on-unmatched-pattern --ignore-path .gitignore",
         "lint:fix": "eslint . --fix",
@@ -37,7 +36,8 @@
         "stylelint-config-standard": "^22.0.0"
     },
     "dependencies": {
-        "stylelint-declaration-use-variable": "^1.7.3",
-        "express": "4.17.2"
+        "body-parser": "^1.19.1",
+        "express": "^4.17.2",
+        "stylelint-declaration-use-variable": "^1.7.3"
     }
 }
