@@ -35,6 +35,7 @@ footer {
 
 img{
     max-width: 300px;
+    padding-right: 50px;
 }
 
 main {
@@ -153,6 +154,11 @@ nav {
 
 .color {
     padding: 10px;
+}
+
+.picture-and-dates {
+    display: flex;
+    
 }
 
 @font-face{
