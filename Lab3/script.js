@@ -13,7 +13,7 @@ async function fetchGraphQL(operationsDoc, operationName, variables) {
     return result.json();
 }
 
-const addItem = `mutation MyMutation($date: String = "") {
+const addItem = `mutation MyMutation($date: date = "") {
     insert_Dates_one(object: {date: $date}) {
       id
     }
