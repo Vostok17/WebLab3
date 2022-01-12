@@ -13,11 +13,11 @@ async function fetchGraphQL(operationsDoc, operationName, variables) {
     return result.json();
 }
 
-const addItem = `mutation MyMutation($date: date = "") {
+const addItem = `mutation MyMutation($date: String = "") {
     insert_Dates_one(object: {date: $date}) {
       id
     }
-}`;
+  }`;
 
 const sendItem = async event => {
     event.preventDefault();
