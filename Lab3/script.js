@@ -2,7 +2,7 @@
 
 const insertItem = document.querySelector('.insert-item');
 async function fetchGraphQL(operationsDoc, operationName, variables) {
-    const result = await fetch('https://web-lab3k.herokuapp.com/v1/graphql', {
+    const result = await fetch('https://lab3df.herokuapp.com/v1/graphql', {
         method: 'POST',
         body: JSON.stringify({
             query: operationsDoc,
