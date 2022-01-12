@@ -1,6 +1,6 @@
 'use strict';
 
-const datesList = document.querySelector('.submenu');
+const datesList = document.querySelector('.dropdown-content');
 async function fetchGraphQL(operationsDoc, _operationName, _variables) {
     const result = await fetch('https://lab3df.herokuapp.com/v1/graphql', {
         method: 'POST',
@@ -20,15 +20,15 @@ const getItems = `query MyQuery {
     }
   }`;
 
-const displayItems = items => {
+const showItems = items => {
     items.forEach(item => {
-        const liEl = document.createElement('li');
-        liEl.innerHTML = item.date;
-        datesList.appendChild(liEl);
+        const elem = document.createElement('p');
+        elem.innerText = item.date;
+        datesList.appendChild(elem);
     });
 };
 
 fetchGraphQL(getItems, 'MyQuery', {}).then(output => {
     const items = output.data.Dates;
-    displayItems(items);
+    showItems(items);
 });
