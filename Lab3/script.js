@@ -22,7 +22,7 @@ const addItem = `mutation MyMutation($date: String = "") {
 const sendItem = async event => {
     event.preventDefault();
 
-    const dateF = insertItem.elements.date;
+    const dateF = insertItem.elements.date.value;
     await fetchGraphQL(addItem, 'MyMutation', {
         date: dateF,
     });
