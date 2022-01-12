@@ -17,7 +17,7 @@ const addItem = `mutation MyMutation($date: String = "") {
     insert_Dates_one(object: {date: $date}) {
       id
     }
-  }`;
+}`;
 
 const sendItem = async event => {
     event.preventDefault();
