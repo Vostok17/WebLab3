@@ -1,12 +1,14 @@
 *{
     --menu-bg: rgb(219, 151, 23);
-    --menu-li-hover: rgb(61, 16, 16);
-    --menu-li-text: rgb(190, 126, 126);
+    --menu-li-hover: rgb(65, 82, 94);
+    --menu-li-text: rgb(245, 245, 245);
+    --menu-li-bg: rgb(44, 56, 64);
     --submenu-li-bg: rgb(170, 105, 30);
     --submenu-li-text: rgb(255, 255, 255);
     --submenu-li-hover-bg: rgb(240, 255, 255);
     --submenu-li-hover-text: rgb(71, 1, 1);
 
+    --bg-color-blue: rgb(64, 185, 233);
     --main-black-color: rgb(0, 0, 0);
     --main-white-color: rgb(255, 255, 255);
     --border-color: var(--main-black-color);
@@ -20,18 +22,21 @@ ul {
     list-style: none; 
 }
 
+
 .menu > li {
     float: left;
     font-size: 2rem;
     position: relative;
     text-align: center;
+    width: 8rem;
 }
 
 .menu > li {
-    background-color: var(--menu-color-orange);
-    color: var(--main-black-color);
+    background-color: var(--menu-li-bg);
+    color: var(--menu-li-text);
     display: block;
     font-family: "Indie Flower", cursive;
+    font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     text-decoration: none;
 }
 .menu > li:hover {
@@ -42,19 +47,16 @@ ul {
 .submenu {
     display: none;
     position: absolute;
-    width: 100%;
 }
 .submenu > li {
-    background-color: var(--submenu-li-bg);
+    background-color: var(--menu-li-bg);
     color: var(--submenu-li-text);
     display: block;
     font-size: 2rem;
     text-decoration: none;
-
 }
 .submenu > li:hover {
-    background-color: var(--submenu-li-hover-bg);
-    color: var(--submenu-li-hover-text);
+    background-color: var(--menu-li-hover);
 }
 
 .menu > li:hover > .submenu {
