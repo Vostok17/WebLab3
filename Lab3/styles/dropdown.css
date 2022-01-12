@@ -15,6 +15,7 @@
 }
 
 .dropdown {
+  cursor: pointer;
   display: inline-block;
   height: 0;
   position: relative;
